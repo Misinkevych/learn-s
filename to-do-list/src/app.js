@@ -20,7 +20,8 @@ function init() {
         input.value = ''
         renderTodos()
     })
-
+   
+    
     document.getElementById('container').addEventListener('click', (e) => {
         const el = e.target
         if (el.classList.contains('remove-todo')) {
@@ -58,16 +59,7 @@ function renderTodos() {
         document.getElementById('container').appendChild(li)
 
     })
-    document.getElementById('container').onblur = function() {
-        console.log(this.value.length);
-        if (this.getAttribute('data-length') > this.value.length) {
-          this.classList.remove('valid');
-          this.classList.add('invalid');
-        } else {
-          this.classList.remove('invalid');
-          this.classList.add('valid');
-        }
-      };
+
 
 }
 

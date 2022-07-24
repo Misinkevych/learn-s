@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body{
+    background-color: aqua;
+  }
+  .wrap {
+    width: 500px;
+    height: 100px;
+
+  }
